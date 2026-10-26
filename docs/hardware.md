@@ -12,7 +12,8 @@
 
 - MCU: Tensilica L106（80/160MHz）, Wi-Fi 2.4GHz のみ, WPA2
 - ロジック電圧: **3.3V（5V 非対応）**
-- 載っているボード（NodeMCU / D1 mini / 単体）は未確認
+- ボード: **NodeMCU**（裏面の印字で確認, 2026-10-26）。USB シリアル変換チップ（CH340 / CP2102）は未確認
+- PlatformIO のボード名: `nodemcuv2`
 - UART0 は USB と共有。`Serial.swap()` で GPIO13(RX) / GPIO15(TX) に移せる
 - GPIO15 は起動時 LOW、GPIO0 / GPIO2 は起動時 HIGH が必要（ブートモードに関係）
 
