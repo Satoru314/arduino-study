@@ -32,4 +32,5 @@
 ## 開発環境
 
 Arduino IDE は使わない。PlatformIO CLI（`pio`）か `arduino-cli` を使う。
-ボードはサーバーの USB に挿し、開発用 CT に渡して書き込む（homeserver-controller 側で管理）。
+開発・書き込みはユーザーの **Mac** で行う（ボードは Mac の USB に挿す）。
+PlatformIO は Mac に入れる: `brew install platformio`（または `pipx install platformio`）。
